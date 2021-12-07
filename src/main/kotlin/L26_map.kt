@@ -7,7 +7,7 @@ fun main(args: Array<String>){
 //    val users = mapOf("hideru" to 98, "seiko" to 45, "miyabi" to 95)
     val users = mutableMapOf("hideru" to 98, "seiko" to 45, "miyabi" to 95)
     users["seiko"] = 100
-    
+
 
     println(users["hideru"]) // 98
     println(users.size) // 3
