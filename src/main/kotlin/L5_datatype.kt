@@ -4,7 +4,7 @@
 
 fun main(args: Array<String>){
     // String, Char
-    val msg: Stringg = "Hello World!!" // Only double quote
+    val msg: String = "Hello World!!" // Only double quote
     val c: Char = 'C' // Only single quote
 
     // Byte, Short, Int, Long
@@ -13,6 +13,9 @@ fun main(args: Array<String>){
 
     // Float, Double
     val d: Double = 23.555555555
-    val f: Fload = 25.333333333F // Must add "F" or "f"
+    val f: Float = 25.333333333F // Must add "F" or "f"
 
+    // Boolean (true or false)
+    val flag: Boolean = true
+    
 }
