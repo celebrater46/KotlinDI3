@@ -2,12 +2,25 @@ version: '3'
 
 services:
   # Kotlin
-  Kotlin-DI:
-    image: ubuntu
-    container_name: kotlin_DI
+#  Kotlin-DI:
+#    image: ubuntu
+#    container_name: kotlin_DI
+#    tty: true
+#    volumes:
+#      - ./src/main/kotlin:/var/kotlin
+#    ports:
+#      - "8080:80"
+#      - "10022:22"
+#    network_mode: "sample-network5"
+
+  kotlin-di3:
+    container_name: kotlin_lessons
+    build:
+      context: ./src
+      dockerfile: Dockerfile
     tty: true
     volumes:
-      - ./src/main/kotlin:/var/kotlin
+      - ./src/main/kotlin:/var/src/main/kotlin
     ports:
       - "8080:80"
       - "10022:22"
